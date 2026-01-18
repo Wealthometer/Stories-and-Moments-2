@@ -56,8 +56,17 @@ export default function Home() {
         {/* Category Filter */}
         <CategoryFilter onCategoryChange={handleCategoryChange} currentCategory={category} />
 
-        {/* Blog Grid */}
-        {loading ? <BlogGridSkeleton /> : <BlogGrid {...pagination} initialPosts={posts} />}
+        {/* Blog Grid - Fixed with all required props */}
+        {loading ? (
+          <BlogGridSkeleton />
+        ) : (
+          <BlogGrid 
+            initialPosts={posts}
+            total={pagination.total}
+            currentPage={pagination.page}
+            totalPages={pagination.pages}
+          />
+        )}
 
         {/* Pagination */}
         {!loading && pagination.pages > 1 && (
