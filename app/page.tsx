@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/noise.jpg')" }}
+      style={{ backgroundImage: "url('/noise2.jpg')" }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}

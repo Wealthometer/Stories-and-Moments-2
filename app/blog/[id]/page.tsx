@@ -41,7 +41,10 @@ export default function BlogPostPage({ params }: { params: Promise<{ id: string 
 
   if (loading) {
     return (
-      <div className="noise-bg min-h-screen bg-background py-12 px-4">
+      <div
+        className="min-h-screen bg-cover bg-center bg-no-repeat py-12 px-4 sm:px-6 lg:px-8"
+        style={{ backgroundImage: "url('/noise2.jpg')" }}
+      >
         <div className="max-w-4xl mx-auto">
           <Skeleton className="h-96 rounded-lg mb-8" />
           <Skeleton className="h-12 rounded-lg mb-4 w-3/4" />
@@ -53,7 +56,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ id: string 
 
   if (!post) {
     return (
-      <div className="noise-bg min-h-screen bg-background flex items-center justify-center">
+      <div className=" min-h-screen bg-background flex items-center justify-cente bg-cover bg-center bg-no-repeatr" style={{ backgroundImage: "url('/noise2.jpg')" }}>
         <div className="text-center fade-in-down">
           <h1 className="text-3xl font-bold mb-4">Post not found</h1>
           <Link href="/">
@@ -76,7 +79,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ id: string 
   const randomAnimation = ["fade-in-up", "slide-in-left", "slide-in-right"][Math.floor(Math.random() * 3)]
 
   return (
-    <div className="noise-bg min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/noise2.jpg')" }}>
       <div className="max-w-4xl mx-auto">
         {/* Back Button */}
         <Link href="/" className="inline-block mb-8 fade-in-down">
@@ -87,7 +90,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ id: string 
         </Link>
 
         {/* Featured Image */}
-        <div className={`relative h-96 rounded-lg overflow-hidden mb-8 ${randomAnimation}`}>
+        <div className={`relative h-150 rounded-lg overflow-hidden mb-8 ${randomAnimation}`}>
           <Image src={post.imageUrl || "/placeholder.svg"} alt={post.title} fill className="object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
         </div>
@@ -149,7 +152,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ id: string 
             Share Post
           </Button>
           <Link href="/">
-            <Button variant="outline" className="border-border hover:bg-background/50 bg-transparent">
+            <Button variant="outline" className="border-border hover:bg-background/50 bg-transparent textwhite">
               View More Posts
             </Button>
           </Link>

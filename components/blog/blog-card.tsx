@@ -30,7 +30,7 @@ export function BlogCard({ _id, title, description, imageUrl, category, createdA
   return ( 
     <Link href={`/blog/${_id}`}>
       <Card className={`group overflow-hidden bg-card border border-border card-hover cursor-pointer ${animation}`}>
-        <div className="relative h-48 overflow-hidden bg-background/50">
+        <div className="relative h-64 overflow-hidden bg-background/50">
           <Image
             src={imageUrl || "/placeholder.svg"}
             alt={title}

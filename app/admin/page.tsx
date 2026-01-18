@@ -36,15 +36,15 @@ export default function AdminPage() {
     
       <div
         className="min-h-screen bg-cover bg-center bg-no-repeat py-12 px-4 sm:px-6 lg:px-8"
-        style={{ backgroundImage: "url('/noise.jpg')" }}
+        style={{ backgroundImage: "url('/noise2.jpg')" }}
       >
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center justify-between mb-12 fade-in-down">
           <div>
-            <h1 className="text-4xl font-bold glow-text mb-2 text-amber-50">
+            <h1 className="text-4xl font-bold glow-text mb-2">
               Admin Dashboard
             </h1>
-            <p className="text-muted-foreground text-white">
+            <p className="text-muted-foreground ">
               Manage your blog posts and media
             </p>
           </div>
