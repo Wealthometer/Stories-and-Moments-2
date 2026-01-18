@@ -44,7 +44,7 @@ export function AdminAuth({ onAuthSuccess }: AdminAuthProps) {
   }
 
   return (
-    <div className="noise-bg min-h-screen bg-background flex items-center justify-center py-12 px-4">
+    <div className="min-h-screen bg-background flex items-center justify-center py-12 px-4">
       <Card className="w-full max-w-md p-6 bg-card border border-border">
         <h1 className="text-3xl font-bold mb-2 glow-text">Admin Access</h1>
         <p className="text-muted-foreground mb-6">Enter the admin password to continue</p>
