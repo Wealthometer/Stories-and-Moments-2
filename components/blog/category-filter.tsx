@@ -46,3 +46,4 @@ export function CategoryFilter({ onCategoryChange, currentCategory }: CategoryFi
     </div>
   )
 }
+ 
