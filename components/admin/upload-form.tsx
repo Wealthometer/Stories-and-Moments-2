@@ -10,7 +10,7 @@ import { Card } from "@/components/ui/card"
 import { Upload, Loader2 } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 
-const CATEGORIES = ["Travel", "Photography", "Nature", "Culture", "Adventure", "Food", "Urban", "Love". "Life", "Code"]
+const CATEGORIES = ["Travel", "Photography", "Nature", "Culture", "Adventure", "Food", "Urban", "Love", "Life", "Code"]
 
 export function UploadForm() {
   const [loading, setLoading] = useState(false)
