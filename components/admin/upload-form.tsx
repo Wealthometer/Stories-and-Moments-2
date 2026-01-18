@@ -31,7 +31,7 @@ export function UploadForm() {
 
   const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
-    if (!file) return
+    if (!file) return 
 
     const formDataWithFile = new FormData()
     formDataWithFile.append("file", file)
