@@ -14,12 +14,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "/favicon.ico",
         media: "(prefers-color-scheme: light)",
       },
     ],
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
