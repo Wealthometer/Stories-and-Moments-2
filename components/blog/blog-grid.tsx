@@ -33,7 +33,7 @@ export function BlogGrid({ initialPosts, total, currentPage, totalPages }: BlogG
       ))}
     </div>
   )
-}
+} 
 
 // BlogGridSkeleton.tsx
 export function BlogGridSkeleton() {
