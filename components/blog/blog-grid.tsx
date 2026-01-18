@@ -14,11 +14,21 @@ export function BlogGrid({ initialPosts, total, currentPage, totalPages }: BlogG
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {initialPosts.map((post, index) => (
-        <BlogCard key={post._id} {...post} index={index} />
+        <BlogCard
+          key={post._id || `post-${index}`}
+          _id={post._id || ""}
+          title={post.title}
+          description={post.description}
+          imageUrl={post.imageUrl}
+          category={post.category}
+          createdAt={post.createdAt.toISOString()} // Convert Date to string
+          views={post.views}
+          index={index}
+        />
       ))}
     </div>
   )
-} 
+}
 
 export function BlogGridSkeleton() {
   return (
