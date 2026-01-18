@@ -6,7 +6,7 @@ export interface BlogPost {
   videoUrl?: string
   story: string
   category: string
-  createdAt: Date
+  createdAt: Date | string
   updatedAt: Date
   views: number
 }
@@ -16,3 +16,5 @@ export interface ApiResponse<T> {
   data?: T
   error?: string
 }
+
+
