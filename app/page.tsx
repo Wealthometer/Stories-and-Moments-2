@@ -45,12 +45,15 @@ export default function Home() {
   }
 
   return (
-    <div className="noise-bg min-h-screen bg-background">
+    <div
+  className="min-h-screen bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: "url('/noise.jpg')" }}
+>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
         <div className="mb-12 fade-in-down">
-          <h1 className="text-5xl font-bold glow-text mb-3">Stories & Moments</h1>
-          <p className="text-lg text-muted-foreground">Explore beautiful stories captured in images and videos</p>
+          <h1 className="text-5xl font-bold glow-text mb-3 text-amber-50">Stories & Moments</h1>
+          <p className="text-lg text-muted-foreground text-white">Explore beautiful stories captured in images and videos</p>
         </div>
 
         {/* Category Filter */}
